@@ -26,6 +26,14 @@ Carrera: Ingenieria en Sitemas e Informatica
 #include <string.h>
 #include "listaSimple.h"
 
+void membrete(){
+	printf("UNIVERSIDAD DE LAS FUERZAS ARMADAS ESPE\n");
+	printf("ejercicio de pila implementacion del push y pop\n");
+	printf("Autores: Michael Morales\n\tDiego Paz\n");
+	printf("Fecha de Creacion: 15-12-2017	Fecha de Modificacion: 17-12-2017\n");
+	printf("Profesor: Ing. Edgar Fernando Solis Acosta\n");
+	printf("Carrera: Ingenieria en Sitemas e Informatica\n");
+}
 void valSalida(char *salida)
 {
 	int  i = 0, c=0;
@@ -43,6 +51,9 @@ void valSalida(char *salida)
 
 int main()
 {
+	membrete();
+	system("pause");
+	system("cls");
 	listaSimple *user = new listaSimple();
 	listaSimple *auxNodo = NULL;
 	char ex = 'N',aux[10]="F";
